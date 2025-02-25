@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikatan Remaja Masjid Raudhatul Ibadah</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo IRMA">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Cari sesuatu...">
+            <button>Cari</button>
+        </div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#profil">Profil &#9662;</a>
+                    <ul class="sub-menu">
+                        <li><a href="#proker">Program Kerja</a></li>
+                        <li><a href="#struktur">Struktur Organisasi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#informasi">Informasi &#9662;</a>
+                    <ul class="sub-menu">
+                        <li><a href="#rutinan">Agenda Rutinan</a></li>
+                        <li><a href="#ramadhan">Kegiatan Ramadhan</a></li>
+                    </ul>
+                </li>
+                <li><a href="#dokumentasi">Dokumentasi</a></li>
+                <li>
+                    <a href="#usaha">Unit Usaha &#9662;</a>
+                    <ul class="sub-menu">
+                        <li><a href="#bisnis">Bisnis Irma</a></li>
+                    </ul>
+                </li>
+                <li><a href="#kontak" style="margin-right: 35px;">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle" style="margin-right: 35px;">☰</div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>IKATAN REMAJA MASJID<br>RAUDHATUL IBADAH</h1>
+            <p>GN. BAHAGIA RT 19 NO. 1 KECAMATAN BALIKPAPAN SELATAN</p>
+            <a href="#dokumentasi" class="btn">Dokumentasi IRMA</a>
+        </div>
+        <div class="scroll-down">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <marquee behavior="scroll" direction="left" class="marquee">
+        "Dirikanlah shalat. Sesungguhnya shalat itu mencegah dari (perbuatan-perbuatan) keji dan mungkar" (Q.S. Al-Ankabut Ayat 45)
+    </marquee>
+
+    <!-- HOME -->
+    <section id="home">
+        <h1>IKATAN REMAJA MASJID RAUDHATUL IBADAH</h1>
+        <p>GN. BAHAGIA RT 19 NO. 1 KECAMATAN BALIKPAPAN SELATAN</p>
+    </section>
+
+    <!-- PROFIL -->
+    <section id="profil">
+        <h2>Profil</h2>
+        <p>Informasi mengenai sejarah dan visi misi organisasi.</p>
+    </section>
+
+        <!-- PROFIL -->
+        <!-- Program Kerja -->
+        <section id="proker">
+            <h2>Program kerja</h2>
+            <p>...</p>
+        </section>
+
+        <!-- PROFIL -->
+        <!-- Program Kerja -->
+        <section id="struktur">
+            <h2>Struktur Organisasi</h2>
+            <p>...</p>
+        </section>
+
+    <!-- INFORMASI -->
+    <section id="informasi">
+        <h2>Informasi</h2>
+        <p>Berita dan pengumuman terbaru.</p>
+    </section>
+
+        <!-- INFORMASI -->
+        <!-- Agenda Rutinan -->
+        <section id="rutinan">
+            <h2>Agenda Rutinan</h2>
+            <p>...</p>
+        </section>
+
+        <!-- INFORMASI -->
+        <!-- Kegiatan Ramadhan -->
+        <section id="ramadhan">
+            <h2>Kegiatan Ramadhan</h2>
+            <p>...</p>
+        </section>
+
+    <!-- DOKUMENTASI -->
+    <section id="dokumentasi">
+        <h2>Dokumentasi</h2>
+        <p>Galeri foto dan video kegiatan.</p>
+    </section>
+
+    <!-- UNIT USAHA -->
+    <section id="unit-usaha">
+        <h2>Unit Usaha</h2>
+        <p>Produk dan jasa yang ditawarkan.</p>
+    </section>
+
+        <!-- UNIT USAHA -->
+        <!-- Bisnis Irma -->
+        <section id="bisnis">
+            <h2>Bisnis Irma</h2>
+            <p>...</p>
+        </section>
+
+    <!-- KONTAK -->
+    <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <p>Hubungi kami untuk informasi lebih lanjut.</p>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.hero-content', { delay: 300, distance: '50px', origin: 'bottom' });
+        ScrollReveal().reveal('.main-menu li', { delay: 100, distance: '50px', origin: 'right', interval: 200 });
+    </script>
+</body>
+</html>
