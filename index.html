@@ -40,10 +40,14 @@
                         <li><a href="#bisnis">Bisnis Irma</a></li>
                     </ul>
                 </li>
-                <li><a href="#kontak" style="margin-right: 35px;">Kontak</a></li>
+                <li><a href="#kontak">Kontak</a></li>
             </ul>
         </nav>
-        <div class="menu-toggle" id="menu-toggle" style="margin-right: 35px;">☰</div>
+        <div class="menu-toggle" id="menu-toggle" style="margin-right: 20px;">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </header>
 
     <!-- Hero -->
@@ -59,21 +63,31 @@
     </section>
 
     <!-- MARQUEE -->
+     <section id="home"></section>
     <marquee behavior="scroll" direction="left" class="marquee">
-        "Dirikanlah shalat. Sesungguhnya shalat itu mencegah dari (perbuatan-perbuatan) keji dan mungkar" (Q.S. Al-Ankabut Ayat 45)
+        "Dirikanlah shalat. Sesungguhnya shalat itu mencegah dari
+        (perbuatan-perbuatan) keji dan mungkar" (Q.S. Al-Ankabut Ayat 45)
     </marquee>
 
     <!-- HOME -->
-    <section id="home">
-        <h1>IKATAN REMAJA MASJID RAUDHATUL IBADAH</h1>
-        <p>GN. BAHAGIA RT 19 NO. 1 KECAMATAN BALIKPAPAN SELATAN</p>
+    <section id="visi-misi" class="content">
+        <div class="visi fade-in-left">
+            <h2>Visi</h2>
+            <p>Mewujudkan generasi muda yang berakhlak mulia, berilmu, dan beramal shalih dalam kehidupan bermasyarakat, keagamaan serta kepedulian sosial.</p>
+        </div>
+        <div class="misi fade-in-right">
+            <h2>Misi</h2>
+            <p id="misi-text"></p>
+        </div>
+    </section>
+
+    <section id="kalender" class="content fade-in">
+        <h2>Waktu Saat Ini</h2>
+        <div id="live-clock"></div>
     </section>
 
     <!-- PROFIL -->
-    <section id="profil">
-        <h2>Profil</h2>
-        <p>Informasi mengenai sejarah dan visi misi organisasi.</p>
-    </section>
+    <section id="profil"></section>
 
         <!-- PROFIL -->
         <!-- Program Kerja -->
@@ -138,7 +152,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
         ScrollReveal().reveal('.hero-content', { delay: 300, distance: '50px', origin: 'bottom' });
-        ScrollReveal().reveal('.main-menu li', { delay: 100, distance: '50px', origin: 'right', interval: 200 });
     </script>
 </body>
 </html>
