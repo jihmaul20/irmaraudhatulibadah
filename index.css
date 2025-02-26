@@ -1,3 +1,4 @@
+/* BODY */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,6 +6,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -23,6 +25,8 @@ header.scrolled {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* HEADER */
+/* Logo */
 .logo img {
     transition: transform 0.3s ease;
     width: 100px; /* Sesuaikan ukuran logo */
@@ -32,6 +36,8 @@ header.scrolled {
     transform: rotate(360deg) scale(1.1);
 }
 
+/* HEADER */
+/* Search */
 .search-bar {
     display: flex;
     align-items: center;
@@ -62,6 +68,8 @@ header.scrolled {
     background: #e65a50;
 }
 
+/* HEADER */
+/* Navigasi */
 nav ul {
     list-style: none;
     display: flex;
@@ -72,12 +80,13 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: bold;
     padding: 10px 15px;
     position: relative;
     transition: color 0.3s ease;
     border-radius: 20px;
+    background-color: white;
 }
 
 nav a::after {
@@ -100,6 +109,8 @@ nav a:hover::after {
     width: 100%;
 }
 
+/* HEADER */
+/* Sub Menu */
 .sub-menu {
     display: none;
     position: absolute;
@@ -131,18 +142,57 @@ nav a:hover::after {
     display: block;
 }
 
+/* HEADER */
+/* Menu Togel */
 .menu-toggle {
     display: none;
+}
+
+.menu-toggle {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    padding: 10px;
+    padding: 5px;
+    width: 35px; /* Diperbesar sedikit agar lebih nyaman */
+    height: 35px;
+    position: relative;
 }
 
 .menu-toggle div {
-    width: 25px;
-    height: 3px;
+    width: 20px; /* Ukuran lebih kecil */
+    height: 2px;
     background: black;
-    margin: 5px;
+    margin: 4px 0; /* Jarak antar garis lebih proporsional */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: absolute;
+}
+
+.menu-toggle div:nth-child(1) {
+    top: 8px;
+}
+
+.menu-toggle div:nth-child(2) {
+    top: 14px;
+}
+
+.menu-toggle div:nth-child(3) {
+    top: 20px;
+}
+
+.menu-toggle.active div:nth-child(1) {
+    transform: rotate(45deg);
+    top: 14px;
+}
+
+.menu-toggle.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active div:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 14px;
 }
 
 @media screen and (max-width: 768px) {
@@ -188,12 +238,7 @@ nav a:hover::after {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: flex; /* Tampilkan di layar kecil */
-    }
-}
-
+/* HERO */
 #hero {
     display: flex;
     align-items: center;
@@ -260,6 +305,8 @@ nav a:hover::after {
     transform: scale(1.05);
 }
 
+/* HERO */
+/* Scroll */
 .scroll-down {
     position: absolute;
     bottom: 40px;
@@ -292,6 +339,7 @@ nav a:hover::after {
     }
 }
 
+/* MARQUEE */
 .marquee {
     width: 100%;
     background: #ff6f61;
@@ -316,5 +364,127 @@ nav a:hover::after {
     }
     to {
         transform: translateX(-100%);
+    }
+}
+
+/* HOME */
+.content {
+    display: flex;
+    flex-direction: row; /* Mengubah arah flex menjadi horizontal */
+    justify-content: space-between; /* Memberi jarak antara Visi dan Misi */
+    align-items: flex-start; /* Menyelaraskan item di bagian atas */
+    padding: 10px 10%;
+    text-align: center;
+}
+
+.visi fade-in-left, p {
+    margin: 15px;
+}
+
+.visi, .misi {
+    width: 45%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    margin-top: 20px;
+}
+
+.visi.show, .misi.show {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.visi:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Efek shadow saat dihover */
+    transform: translateY(-5px); /* Efek naik sedikit saat dihover */
+}
+
+#misi-text {
+    list-style-type: decimal; /* Menampilkan nomor */
+    padding-left: 20px; /* Jarak dari kiri */
+    text-align: left; /* Teks rata kiri */
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px; /* Jarak dari judul Misi */
+}
+
+#misi-text li {
+    margin-bottom: 10px; /* Jarak antar item */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+/* Live Clock */
+#live-clock {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Ubah tata letak menjadi vertikal di mobile */
+        padding: 20px;
+    }
+
+    /* Marquee */
+    .marquee {
+        font-size: 14px; /* Ukuran font lebih kecil di mobile */
+    }
+
+    .visi, .misi {
+        width: 100%; /* Lebar penuh di mobile */
+        margin-bottom: 20px; /* Beri jarak antara Visi dan Misi */
+    }
+
+    #misi-text {
+        font-size: 16px; /* Ukuran font lebih kecil di mobile */
+        padding-left: 15px; /* Jarak dari kiri lebih kecil */
+    }
+
+    #misi-text li {
+        margin-bottom: 8px; /* Jarak antar item lebih kecil */
+    }
+
+    /* Live Clock */
+    #live-clock {
+        font-size: 20px; /* Ukuran font lebih kecil di mobile */
     }
 }
