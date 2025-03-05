@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikatan Remaja Masjid Raudhatul Ibadah</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo IRMA">
+        </div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#profil">Profil &#9662;</a>
+                    <ul class="sub-menu">
+                        <li><a href="#visimisi">Visi Misi</a></li>
+                        <li><a href="#proker">Program Kerja</a></li>
+                        <li><a href="#struktur">Struktur Organisasi</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#informasi">Informasi &#9662;</a>
+                    <ul class="sub-menu">
+                        <li><a href="#rutinan">Agenda Rutinan</a></li>
+                        <li><a href="#ramadhan">Kegiatan Ramadhan</a></li>
+                    </ul>
+                </li>
+                <li><a href="#dokumentasi">Dokumentasi</a></li>
+                <li>
+                    <a href="#usaha">Unit Usaha &#9662;</a>
+                    <ul class="sub-menu">
+                        <li><a href="#bisnis">Bisnis Irma</a></li>
+                    </ul>
+                </li>
+                <li><a href="#kontak" style="margin-right: 35px;">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle" style="margin-right: 20px;">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home">
+        <div class="hero-content">
+            <h1>IKATAN REMAJA MASJID<br>RAUDHATUL IBADAH</h1>
+            <p>GN. BAHAGIA RT 19 NO. 1 KECAMATAN BALIKPAPAN SELATAN</p>
+            <a href="#dokumentasi" class="btn">Dokumentasi IRMA</a>
+        </div>
+        <div class="scroll-down">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+     <section id="visimisi"></section>
+    <marquee behavior="scroll" direction="left" class="marquee">
+        "Dirikanlah shalat. Sesungguhnya shalat itu mencegah dari
+        (perbuatan-perbuatan) keji dan mungkar" (Q.S. Al-Ankabut Ayat 45)
+    </marquee>
+
+    <!-- HOME -->
+    <section class="content">
+        <div class="visi fade-in-left">
+            <h2>Visi</h2>
+            <p>Mewujudkan generasi muda yang berakhlak mulia, berilmu, dan beramal shalih dalam kehidupan bermasyarakat, keagamaan serta kepedulian sosial.</p>
+        </div>
+        <div class="misi fade-in-right">
+            <h2>Misi</h2>
+            <p id="misi-text"></p>
+        </div>
+    </section>
+
+    <section id="kalender" class="content fade-in">
+        <h2>Waktu Saat Ini</h2>
+        <div class="clock-container">
+            <div class="clock-icon">🕒</div> <!-- Ikon jam -->
+            <div id="live-clock"></div>
+        </div>
+    </section>
+
+    <!-- PROFIL -->
+    <section id="profil"></section>
+
+        <!-- PROFIL -->
+        <!-- Program Kerja -->
+        <section id="proker">
+            <h2>Program Kerja</h2>
+            <div class="program-container">
+                <div class="program-card">
+                    <div class="program-icon">🕌</div>
+                    <h3>Keagamaan</h3>
+                    <p>Mengadakan kajian rutin dan kegiatan keagamaan lainnya.</p>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">🤝</div>
+                    <h3>Sosial</h3>
+                    <p>Melakukan kegiatan bakti sosial dan membantu masyarakat sekitar.</p>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">🎨</div>
+                    <h3>Kreativitas</h3>
+                    <p>Membangun dan meningkatkan kreativitas dan kemandirian para generasi muda.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFIL -->
+        <!-- Struktur Organisasi -->
+        <section id="struktur">
+            <h2>Struktur Organisasi</h2>
+            <div class="hierarchy">
+                <div class="level">
+                    <div class="node" onclick="toggleAccordion('pembina')">Pembina</div>
+                </div>
+                <div id="pembina" class="accordion-content">
+                    <img src="gbr/pembina.jpg" alt="Pembina">
+                    <p>Nama Pembina</p>
+                    <a href="https://instagram.com/pembina" target="_parent">Instagram</a>
+                </div>
+                
+                <div class="level">
+                    <div class="node" onclick="toggleAccordion('ketua')">Ketua IRMA</div>
+                </div>
+                <div id="ketua" class="accordion-content">
+                    <img src="gbr/ketua.jpg" alt="Ketua">
+                    <p>Nama Ketua</p>
+                    <a href="https://instagram.com/ketua" target="_parent">Instagram</a>
+                </div>
+                
+                <div class="level">
+                    <div class="node" onclick="toggleAccordion('wakil')">Wakil Ketua</div>
+                    <div class="node" onclick="toggleAccordion('sekretaris')">Sekretaris</div>
+                    <div class="node" onclick="toggleAccordion('bendahara')">Bendahara</div>
+                </div>
+                <div id="wakil" class="accordion-content">
+                    <img src="gbr/wakil.jpg" alt="Wakil Ketua">
+                    <p>Nama Wakil</p>
+                    <a href="https://instagram.com/wakil" target="_parent">Instagram</a>
+                </div>
+                <div id="sekretaris" class="accordion-content">
+                    <img src="gbr/anggota/jihan.jpg" alt="Sekretaris">
+                    <p>Jihan Rizky Maulidina, S.Kom</p>
+                    <a href="https://www.instagram.com/jihmaul20" target="_parent">Instagram</a>
+                </div>
+                <div id="bendahara" class="accordion-content">
+                    <img src="gbr/bendahara.jpg" alt="Bendahara">
+                    <p>Nama Bendahara</p>
+                    <a href="https://instagram.com/bendahara" target="_parent">Instagram</a>
+                </div>
+
+                <div class="level">
+                    <div class="anggota">
+                        <div class="node" onclick="toggleAccordion('anggota')">Anggota</div>
+                    </div>
+                </div>
+                <div id="anggota" class="accordion-content">
+                    <div class="anggota-grid">
+                        <div class="anggota-item">
+                            <img src="gbr/anggota1.jpg" alt="Anggota 1">
+                            <p>Nama Anggota 1</p>
+                            <a href="https://instagram.com/anggota1" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/anggota2.jpg" alt="Anggota 2">
+                            <p>Nama Anggota 2</p>
+                            <a href="https://instagram.com/anggota2" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/anggota3.jpg" alt="Anggota 3">
+                            <p>Nama Anggota 3</p>
+                            <a href="https://instagram.com/anggota3" target="_blank">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- INFORMASI -->
+    <section id="informasi"></section>
+
+        <!-- INFORMASI -->
+        <!-- Agenda Rutinan -->
+        <section id="rutinan">
+            <h2>Agenda Rutinan</h2>
+            <p>Berikut adalah jadwal kegiatan rutin yang diselenggarakan oleh IRMA.</p>
+            <table class="agenda-table">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Cari...">
+                </div>                             
+                <div class="table-container">
+                    <table class="agenda-table">
+                        <thead>
+                            <tr>
+                                <th>Tanggal</th>
+                                <th>Kegiatan</th>
+                                <th>Waktu</th>
+                                <th>Tempat</th>
+                                <th>Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody id="agenda-body">
+                            <!-- Data dalam JavaScript -->
+                        </tbody>
+                    </table>
+                </div>    
+            </table>
+        </section>
+        
+        <!-- INFORMASI -->
+        <!-- Kegiatan Ramadhan -->
+        <section id="ramadhan">
+            <h2>Kegiatan Ramadhan</h2>
+            <p>Berikut adalah jadwal kegiatan Ramadhan yang diselenggarakan oleh IRMA.</p>
+
+            <!-- Pilihan Tanggal -->
+            <div class="calendar-controls">
+                <label for="date-picker">Pilih Tanggal:</label>
+                <input type="month" id="date-picker">
+            </div>
+
+            <!-- Kalender Hijriah & Masehi -->
+            <div class="calendar-display">
+                <h3 id="gregorian-month">Kalender Masehi: -</h3>
+                <h3 id="hijri-month">Kalender Hijriah: -</h3>
+            </div>
+
+            <!-- Pilihan Jumlah Baris -->
+            <div class="pagination-controls">
+                <label for="ramadhan-limit">Tampilkan:</label>
+                <select id="ramadhan-limit">
+                    <option value="5">5 Baris</option>
+                    <option value="10">10 Baris</option>
+                    <option value="15">15 Baris</option>
+                    <option value="all">Semua</option>
+                </select>
+            </div>
+
+            <!-- Tabel Kalender -->
+            <div class="table-container">
+                <table class="agenda-table">
+                    <thead>
+                        <tr>
+                            <th>Tanggal Masehi</th>
+                            <th>Tanggal Hijriah</th>
+                            <th>Hari</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body"></tbody>
+                </table>
+            </div>
+
+            <section id="jadwal">
+                <div class="jadwal-accordion">
+                    <div class="accordion-row">
+                        <div class="accordion-item">
+                            <div class="accordion-header" onclick="toggleAccordion('jadwal-imsak')">
+                                <h3>Jadwal Imsakiyah & Buka Puasa</h3>
+                                <span class="arrow">▼</span>
+                            </div>
+                            <div class="accordion-content" id="jadwal-imsak">
+                                <img src="gbr/file/Jadwal Imsak Kota Balikpapan Maret 2025-1.png" alt="Jadwal Imsakiyah" class="fade-in">
+                                <button class="btn-unduh" onclick="downloadImage('gbr/file/Jadwal Imsak Kota Balikpapan Maret 2025-1.png', 'Jadwal_Imsakiyah.png')">Unduh Gambar</button>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <div class="accordion-header" onclick="toggleAccordion('jadwal-sumbangan')">
+                                <h3>Jadwal Sumbangan Buka Puasa</h3>
+                                <span class="arrow">▼</span>
+                            </div>
+                            <div class="accordion-content" id="jadwal-sumbangan">
+                                <img src="gbr/file/Jadwal Sumbangan Buka Puasa.jpg" alt="Jadwal Sumbangan" class="fade-in">
+                                <button class="btn-unduh" onclick="downloadImage('gbr/file/Jadwal Sumbangan Buka Puasa.jpg', 'Jadwal_Sumbangan.png')">Unduh Gambar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    <!-- DOKUMENTASI -->
+    <section id="dokumentasi">
+        <h2>Dokumentasi Kegiatan</h2>
+
+        <!-- Galeri Dokumentasi -->
+        <div class="gallery">
+            <div class="gallery-item" data-category="kegiatan">
+                <img src="gbr/full/full1.jpg" alt="Kegiatan 1" onclick="openModal('gbr/dokumentasi1.jpg', 'Kegiatan IRMA')">
+            </div>
+            <div class="gallery-item" data-category="ramadhan">
+                <img src="gbr/full/full2.jpg" alt="Kegiatan Ramadhan" onclick="openModal('gbr/dokumentasi2.jpg', 'Kegiatan Ramadhan')">
+            </div>
+        </div>
+        
+        <!-- Tombol Navigasi -->
+        <div class="dokumentasi-footer">
+            <a href="dokumentasi.html" class="btn-dokumentasi">Lihat Selengkapnya</a>
+        </div>
+        
+        <!-- Modal untuk Preview Gambar -->
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <div id="caption"></div>
+        </div>
+    </section> 
+
+    <!-- UNIT USAHA -->
+    <section id="unit-usaha"></section>
+        <!-- UNIT USAHA -->
+        <!-- Bisnis Irma -->
+        <section id="bisnis">
+            <div class="container">
+                <h2>Bisnis IRMA</h2>
+                <p>Temukan berbagai produk dan layanan berkualitas dari unit usaha IRMA.</p>
+                <a href="bisnis.html" target="_parent" class="cta-button">
+                    <span>Jelajahi Bisnis Kami</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+    <!-- KONTAK -->
+    <section id="kontak">
+        <h2>Kontak Kami</h2>
+        <p>Hubungi kami melalui:</p>
+      
+        <div class="contact-grid">
+          <div class="contact-item">
+            <a href="#" target="_blank">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Alamat</h3>
+                <p>GN. BAHAGIA RT 19 NO. 1 KECAMATAN BALIKPAPAN SELATAN</p>
+              </div>
+            </a>
+          </div>
+          <div class="contact-item">
+            <a href="tel:+6281234567890" target="_blank">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Telepon</h3>
+                <p>+62 81234567890</p>
+              </div>
+            </a>
+          </div>
+          <div class="contact-item">
+            <a href="mailto:irma.raudhatulibadah@gmail.com" target="_blank">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Email</h3>
+                <p>irma.raudhatulibadah@gmail.com</p>
+              </div>
+            </a>
+          </div>
+          <div class="contact-item">
+            <a href="https://www.instagram.com/irma.ri/" target="_blank">
+              <div class="contact-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Website</h3>
+                <p>irma.ri</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.hero-content', { delay: 300, distance: '50px', origin: 'bottom' });
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokuemntasi IRMA</title>
+    <link rel="stylesheet" href="dokumentasi.css">
+</head>
+<body>
+    <section id="dokumentasi">
+        <h2>Dokumentasi Kegiatan</h2>
+        
+        <!-- Filter & Search -->
+        <div class="filter-container">
+            <select id="filter-kategori">
+                <option value="all">Semua</option>
+                <option value="kegiatan">Kegiatan</option>
+                <option value="ramadhan">Ramadhan</option>
+                <option value="sosial">Sosial</option>
+            </select>
+        </div>
+        
+        <!-- Galeri Dokumentasi -->
+        <div class="gallery">
+            <div class="gallery-item" data-category="kegiatan">
+                <img src="gbr/full/full1.jpg" alt="Kegiatan 1" onclick="openModal('gbr/dokumentasi1.jpg', 'Kegiatan IRMA')">
+            </div>
+            <div class="gallery-item" data-category="ramadhan">
+                <img src="gbr/full/full2.jpg" alt="Kegiatan Ramadhan" onclick="openModal('gbr/dokumentasi2.jpg', 'Kegiatan Ramadhan')">
+            </div>
+            <div class="gallery-item" data-category="sosial">
+                <img src="gbr/full/full3.jpg" alt="Kegiatan Sosial" onclick="openModal('gbr/dokumentasi3.jpg', 'Kegiatan Sosial')">
+            </div>
+            <div class="gallery-item" data-category="sosial">
+                <img src="gbr/full/full4.jpg" alt="Kegiatan Sosial" onclick="openModal('gbr/dokumentasi4.jpg', 'Kegiatan Sosial')">
+            </div>
+        </div>
+        
+        <!-- Modal untuk Preview Gambar -->
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <div id="caption"></div>
+        </div>
+    </section>   
+    <script src="dokumentasi.js"></script> 
+</body>
+</html>
