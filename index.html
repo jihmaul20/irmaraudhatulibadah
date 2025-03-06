@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ikatan Remaja Masjid Raudhatul Ibadah</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -332,57 +333,50 @@
         </section>
 
     <!-- KONTAK -->
-    <section id="kontak">
-        <h2>Kontak Kami</h2>
-        <p>Hubungi kami melalui:</p>
-      
-        <div class="contact-grid">
-          <div class="contact-item">
-            <a href="#" target="_blank">
-              <div class="contact-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="contact-info">
-                <h3>Alamat</h3>
-                <p>GN. BAHAGIA RT 19 NO. 1 KECAMATAN BALIKPAPAN SELATAN</p>
-              </div>
+    <section id="quick-contact">
+        <h2>Hubungi Kami</h2>
+        <div class="contact-icons">
+            <a href="https://api.whatsapp.com/send?phone=6281234567890&text=Halo%20saya%20ingin%20bertanya" target="_blank" class="contact-button whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
             </a>
-          </div>
-          <div class="contact-item">
-            <a href="tel:+6281234567890" target="_blank">
-              <div class="contact-icon">
-                <i class="fas fa-phone"></i>
-              </div>
-              <div class="contact-info">
-                <h3>Telepon</h3>
-                <p>+62 81234567890</p>
-              </div>
+            <a href="mailto:irma.raudhatulibadah@gmail.com?subject=Informasi%20IRMA&body=Halo%2C%20saya%20ingin%20menanyakan..." class="contact-button email">
+                <i class="fas fa-envelope"></i> Email
             </a>
-          </div>
-          <div class="contact-item">
-            <a href="mailto:irma.raudhatulibadah@gmail.com" target="_blank">
-              <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="contact-info">
-                <h3>Email</h3>
-                <p>irma.raudhatulibadah@gmail.com</p>
-              </div>
+            <a href="https://www.instagram.com/irma.ri/" target="_blank" class="contact-button instagram">
+                <i class="fab fa-instagram"></i> Instagram
             </a>
-          </div>
-          <div class="contact-item">
-            <a href="https://www.instagram.com/irma.ri/" target="_blank">
-              <div class="contact-icon">
-                <i class="fas fa-globe"></i>
-              </div>
-              <div class="contact-info">
-                <h3>Website</h3>
-                <p>irma.ri</p>
-              </div>
+            <a href="tel:+6281234567890" class="contact-button phone">
+                <i class="fas fa-phone"></i> Telepon
             </a>
-          </div>
         </div>
-      </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <section id="location">
+            <h2>Lokasi Kami</h2>
+            <iframe src="https://maps.app.goo.gl/861cLxP3TNmBA1z66" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+            <h3>Ikuti Kami di Instagram</h3>
+            <a href="https://www.instagram.com/irma.ri/" target="_blank">@irma.ri</a>
+        </section>
+        <section id="chat-form">
+            <h2>Kirim Pesan</h2>
+            <div class="chat-container">
+                <div id="chat-box"></div>
+                <input type="text" id="user-input" placeholder="Tulis pesan..." />
+                <button onclick="sendMessage()">Kirim</button>
+            </div>
+        </section>
+    </footer>
+
+        <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
 
     
     <script src="https://unpkg.com/scrollreveal"></script>
