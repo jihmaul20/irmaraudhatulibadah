@@ -1155,6 +1155,10 @@ th, td {
     .accordion-row {
         flex-direction: column;
     }
+    .accordion-content img {
+        width: 80px; /* Kurangi ukuran gambar */
+        height: auto;
+    }
 }
 
 /* DOKUMENTASI */
