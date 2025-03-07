@@ -3,7 +3,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 /* HEADER */
@@ -30,7 +29,8 @@ header.scrolled {
 /* Logo */
 .logo img {
     transition: transform 0.3s ease;
-    width: 100px; /* Sesuaikan ukuran logo */
+    width: 50px; /* Sesuaikan ukuran logo */
+    border-radius: 50%;
 }
 
 .logo img:hover {
@@ -63,7 +63,7 @@ nav a::after {
     position: absolute;
     width: 0;
     height: 2px;
-    background: #ff6f61;
+    background: #017572;
     bottom: -5px;
     left: 0;
     transition: width 0.3s ease;
@@ -71,7 +71,7 @@ nav a::after {
 }
 
 nav a:hover {
-    color: #ff6f61;
+    color: #017572;
 }
 
 nav a:hover::after {
@@ -132,7 +132,7 @@ nav a:hover::after {
 .menu-toggle div {
     width: 20px; /* Ukuran lebih kecil */
     height: 2px;
-    background: black;
+    background: #017572;
     margin-bottom: 45px;
     transition: transform 0.3s ease, opacity 0.3s ease;
     position: absolute;
@@ -166,7 +166,7 @@ nav a:hover::after {
 
 @media screen and (max-width: 768px) {
     .logo img {
-        width: 80px; /* Ukuran logo lebih kecil di HP */
+        width:45px; /* Ukuran logo lebih kecil di HP */
     }
     .header {
         flex-direction: column;
@@ -219,6 +219,16 @@ nav a:hover::after {
         cursor: pointer;
         padding: 10px;
     }
+}
+
+/* SECTION */
+section {
+    background-color: #FFFFFF;
+    color: #017572;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
 }
 
 /* HOME */
@@ -274,7 +284,7 @@ nav a:hover::after {
 }
 
 .btn {
-    background: #ff6f61;
+    background: #017572;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -284,7 +294,8 @@ nav a:hover::after {
 }
 
 .btn:hover {
-    background: #e65a50;
+    background: white;
+    color: black;
     transform: scale(1.05);
 }
 
@@ -325,7 +336,7 @@ nav a:hover::after {
 /* MARQUEE */
 .marquee {
     width: 100%;
-    background: #ff6f61;
+    background: #017572;
     color: white;
     padding: 10px 0;
     font-size: 18px;
@@ -443,7 +454,7 @@ nav a:hover::after {
     text-align: center;
     margin-top: 40px;
     padding: 40px 20px;
-    background: linear-gradient(135deg, #ff6f61, #ff9a9e);
+    background: linear-gradient(135deg, #017572, #04c3bd);
     border-radius: 15px;
     color: white;
     position: relative;
@@ -596,7 +607,7 @@ nav a:hover::after {
 .program-card h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #ff6f61;
+    color: #017572;
 }
 
 .program-card p {
@@ -634,7 +645,7 @@ nav a:hover::after {
 }
 
 .node {
-    background: #ff6f61;
+    background: #017572;
     color: white;
     padding: 15px 20px;
     border-radius: 10px;
@@ -714,7 +725,7 @@ nav a:hover::after {
 #rutinan h2 {
     font-size: 28px;
     text-align: center;
-    color: #ff6f61;
+    color: #017572;
     font-weight: bold;
     margin-bottom: 10px;
     position: relative;
@@ -727,13 +738,13 @@ nav a:hover::after {
     display: block;
     width: 50px;
     height: 4px;
-    background-color: #ff6f61;
+    background-color: #017572;
     margin: 5px auto 0;
     border-radius: 2px;
 }
 
 #rutinan h2:hover {
-    color: #e65a50;
+    color: #026c68;
     transform: scale(1.05);
 }
 
@@ -849,7 +860,7 @@ th, td {
 }
 
 .agenda-table th {
-    background: #ff6f61;
+    background: #017572;
     color: white;
 }
 
@@ -904,7 +915,7 @@ th, td {
 #ramadhan h2 {
     font-size: 28px;
     text-align: center;
-    color: #ff6f61;
+    color: #017572;
     font-weight: bold;
     margin-bottom: 10px;
     position: relative;
@@ -916,7 +927,7 @@ th, td {
     display: block;
     width: 50px;
     height: 4px;
-    background-color: #ff6f61;
+    background-color: #016a67;
     margin: 5px auto 0;
     border-radius: 2px;
 }
@@ -984,7 +995,7 @@ th, td {
 #jadwal {
     position: relative;
     padding: 50px 20px;
-    background: linear-gradient(135deg, #ffe6e6, #ffcccc);
+    background: linear-gradient(135deg, #b2f0ee, #57d4d0);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -1046,7 +1057,7 @@ th, td {
 }
 
 .accordion-header {
-    background: linear-gradient(135deg, #ff6f61, #ff9a9e);
+    background: linear-gradient(135deg, #017572, #02bfb9);
     color: white;
     padding: 15px 20px;
     cursor: pointer;
@@ -1058,7 +1069,7 @@ th, td {
 }
 
 .accordion-header:hover {
-    background: linear-gradient(135deg, #e65a50, #ff7f80);
+    background: linear-gradient(135deg, #02bfb9, #017572);
 }
 
 .accordion-content {
@@ -1139,7 +1150,7 @@ th, td {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background: #ff6f61;
+    background: #017572;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -1148,7 +1159,7 @@ th, td {
 }
 
 .btn-dokumentasi:hover {
-    background: #e65a50;
+    background: #01c7c1;
 }
 
 /* Modal */
@@ -1206,7 +1217,7 @@ th, td {
 #bisnis .cta-button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #ff6f61;
+    background-color: #017572;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -1249,7 +1260,7 @@ th, td {
     padding: 50px 20px;
     color: white;
     overflow: hidden;
-    background: linear-gradient(135deg, #ff6f61, #ff9a9e);
+    background: linear-gradient(135deg, #017572, #02bfb9);
     border-radius: 15px;
 }
 
@@ -1399,13 +1410,6 @@ iframe {
     border-radius: 10px;
 }
 
-footer {
-    background: #333;
-    color: white;
-    padding: 30px 20px;
-    margin-top: 40px;
-}
-
 .whatsapp-float {
     position: fixed;
     bottom: 20px;
@@ -1425,4 +1429,108 @@ footer {
 
 .whatsapp-float:hover {
     transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(135deg, #1a1a1a, #017572);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+}
+
+.footer-column h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #fff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ffeae6;
+    transform: translateX(5px);
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 28px;
+    margin-right: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 111, 97, 0.8);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+/* Animasi Footer */
+.show-footer {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+
+#lokasi {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 1100px;
+}
+
+@media screen and (max-width: 768px) {
+    #lokasi {
+        padding: 30px 10px;
+    }
+
+    .maps-container iframe {
+        height: 250px;
+    }
 }
