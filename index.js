@@ -342,13 +342,20 @@ function downloadImage(url, filename) {
 }
 
 
-function sendMessage() {
-    let userInput = document.getElementById("user-input").value;
-    if (userInput.trim() !== "") {
-        let chatBox = document.getElementById("chat-box");
-        let newMessage = document.createElement("p");
-        newMessage.textContent = "Anda: " + userInput;
-        chatBox.appendChild(newMessage);
-        document.getElementById("user-input").value = "";
+// Animasi Footer Saat Scroll
+document.addEventListener("DOMContentLoaded", function () {
+    const footer = document.getElementById("footer");
+
+    function checkScroll() {
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const footerPosition = footer.offsetTop;
+
+        if (scrollPosition >= footerPosition - 50) { // Diperbaiki agar lebih responsif
+            footer.classList.add("show-footer");
+        }
     }
-}
+
+    checkScroll(); // Jalankan sekali saat halaman dimuat
+    window.addEventListener("scroll", checkScroll);
+});
+
