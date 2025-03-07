@@ -3,10 +3,26 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(latar\ logo\ irma\ trans.png);
     justify-content: center;
-    background-size: contain;
-    background-position: center;
+    background-image: url('latar\ logo\ irma\ trans.png'); /* Pastikan path gambar benar */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-size: cover; /* Pastikan gambar menutupi seluruh layar */
+    background-position: center; /* Pusatkan gambar */
+    background-attachment: fixed; /* Agar background tetap di tempat saat di-scroll */
+    overflow-x: hidden; /* Mencegah scroll horizontal */
+}
+
+body::before {
+    content: "";
+    position: fixed; /* Agar tetap di tempat saat scroll */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('latar\ logo\ irma\ trans.png') no-repeat center center/cover;
+    background-size: cover;
+    opacity: 0.7; /* Sesuaikan transparansi (0.1 - 1) */
+    z-index: -1; /* Taruh di belakang konten */
 }
 
 /* HEADER */
@@ -227,7 +243,7 @@ nav a:hover::after {
 section {
     background-color: #FFFFFF;
     color: #017572;
-    padding: 20px;
+    padding: 0px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     margin: 20px;
@@ -243,6 +259,9 @@ section {
     color: white;
     text-align: center;
     position: relative;
+    width: 100vw; /* Lebar penuh */
+    margin: 0; /* Hapus margin */
+    padding: 0; /* Hapus padding */
 }
 
 #home::before {
