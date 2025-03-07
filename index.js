@@ -247,6 +247,29 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById("misi").classList.add("show");
     }, 1000);
 
+    // Struktur Organisasi
+    function toggleAccordion(id) {
+        const content = document.getElementById(id);
+        const img = content.querySelector("img");
+    
+        if (window.innerWidth <= 768) {
+            // Cek apakah gambar sudah dimuat, jika belum baru dimuat
+            if (!img.dataset.loaded) {
+                img.src = img.dataset.src; // Ambil gambar dari data-src
+                img.dataset.loaded = "true"; // Tandai sebagai sudah dimuat
+            }
+        }
+    
+        // Toggle konten
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            content.style.padding = "0 20px";
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            content.style.padding = "15px 20px";
+        }
+    }    
+
     // Animasi untuk Program Kerja dan Struktur Organisasi
     document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
 
