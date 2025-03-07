@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ikatan Remaja Masjid Raudhatul Ibadah</title>
+    <link rel="icon" type="image/png" href="logo irma.jpg">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -11,7 +12,7 @@
     <!-- HEADER -->
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo IRMA">
+            <img src="logo irma.jpg" alt="Logo IRMA">
         </div>
         <nav>
             <ul class="main-menu">
@@ -38,7 +39,7 @@
                         <li><a href="#bisnis">Bisnis Irma</a></li>
                     </ul>
                 </li>
-                <li><a href="#kontak" style="margin-right: 35px;">Kontak</a></li>
+                <li><a href="#kontak">Kontak</a></li>
             </ul>
         </nav>
         <div class="menu-toggle" id="menu-toggle" style="margin-right: 20px;">
@@ -60,7 +61,7 @@
         </div>
     </section>
 
-    <!-- MARQUEE -->
+    <!-- MARQUEE 1 -->
      <section id="visimisi"></section>
     <marquee behavior="scroll" direction="left" class="marquee">
         "Dirikanlah shalat. Sesungguhnya shalat itu mencegah dari
@@ -351,33 +352,66 @@
         </div>
     </section>
 
+    <!-- MARQUEE 2 -->
+    <section id="visimisi"></section>
+    <br>
+    <br>
+    <marquee behavior="scroll" direction="left" class="marquee">
+        "Shalat berjama'ah lebih utama 27 derajat dibanding shalat sendirian" (H.R Bukhari dan Muslim)
+    </marquee>
+    <br>
+    <br>
+
     <!-- Footer -->
-    <footer>
-        <section id="location">
-            <h2>Lokasi Kami</h2>
-            <iframe src="https://maps.app.goo.gl/861cLxP3TNmBA1z66" 
-                    width="100%" 
-                    height="300" 
-                    style="border:0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" 
-                    allowfullscreen="" 
-                    loading="lazy"></iframe>
-            <h3>Ikuti Kami di Instagram</h3>
-            <a href="https://www.instagram.com/irma.ri/" target="_blank">@irma.ri</a>
-        </section>
-        <section id="chat-form">
-            <h2>Kirim Pesan</h2>
-            <div class="chat-container">
-                <div id="chat-box"></div>
-                <input type="text" id="user-input" placeholder="Tulis pesan..." />
-                <button onclick="sendMessage()">Kirim</button>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Tentang Kami</h3>
+                <p>Ikatan Remaja Masjid Raudhatul Ibadah (IRMA) adalah komunitas remaja yang bertujuan meningkatkan keimanan dan kepedulian sosial.</p>
             </div>
-        </section>
+            <div class="footer-column">
+                <h3>Navigasi Cepat</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#informasi">Informasi</a></li>
+                    <li><a href="#dokumentasi">Dokumentasi</a></li>
+                    <li><a href="#bisnis">Bisnis IRMA</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Hubungi Kami</h3>
+                <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                <p><i class="fas fa-envelope"></i> irma.raudhatulibadah@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/irma.ri" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:irma.raudhatulibadah@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <section id="lokasi">
+            <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.2615917997257!2d116.8840174!3d-1.2448509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1467759aa0db9%3A0x34353cc9a9c94c01!2sMasjid%20Raudhatul%20Ibadah!5e0!3m2!1sid!2sid!4v1710456789012!5m2!1sid!2sid" 
+                    width="100%" 
+                    height="350" 
+                    style="border:0; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+        </section>        
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 IRMA Raudhatul Ibadah. Semua Hak Dilindungi.</p>
+        </div>
     </footer>
+    
+    
 
-        <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
     
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
