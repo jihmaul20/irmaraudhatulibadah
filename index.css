@@ -249,6 +249,7 @@ section {
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    scroll-margin-top: 100px; /* Menyesuaikan jarak agar tidak tertutup header */
 }
 
 section * {
